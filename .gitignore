@@ -1,3 +1,4 @@
+.settings/
 bin/
 native/
 jni/target/
