@@ -10,7 +10,7 @@ import com.badlogic.gdx.jnigen.NativeCodeGenerator;
 public class SdlBuild {
 	public static void main(String[] args) throws Exception {
 		// generate C/C++ code
-		new NativeCodeGenerator().generate();
+		new NativeCodeGenerator().generate("src/main/java", "target/classes", "jni");
 
 		// generate build scripts, for win32 only
 		// custom target for testing purposes

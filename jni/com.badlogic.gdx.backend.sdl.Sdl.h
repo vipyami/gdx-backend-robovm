@@ -161,12 +161,31 @@ JNIEXPORT jint JNICALL Java_com_badlogic_gdx_backend_sdl_Sdl_getBitsPerPixel
 
 /*
  * Class:     com_badlogic_gdx_backend_sdl_Sdl
+ * Method:    pollEvent
+ * Signature: ([I)V
+ */
+JNIEXPORT void JNICALL Java_com_badlogic_gdx_backend_sdl_Sdl_pollEvent
+  (JNIEnv *, jclass, jintArray);
+
+/*
+ * Class:     com_badlogic_gdx_backend_sdl_Sdl
  * Method:    version
  * Signature: ()I
  */
 JNIEXPORT jint JNICALL Java_com_badlogic_gdx_backend_sdl_Sdl_version
   (JNIEnv *, jclass);
 
+#ifdef __cplusplus
+}
+#endif
+#endif
+/* Header for class com_badlogic_gdx_backend_sdl_Sdl_SdlEvent */
+
+#ifndef _Included_com_badlogic_gdx_backend_sdl_Sdl_SdlEvent
+#define _Included_com_badlogic_gdx_backend_sdl_Sdl_SdlEvent
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifdef __cplusplus
 }
 #endif

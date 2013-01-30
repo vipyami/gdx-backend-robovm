@@ -5,7 +5,7 @@ import com.badlogic.gdx.utils.SharedLibraryLoader;
 
 public class SdlTest {
 	public static void main(String[] args) throws InterruptedException {
-		new SharedLibraryLoader("libs/gdx-backend-sdl-natives.jar").load("gdx-backend-sdl");
+//		new SharedLibraryLoader("libs/gdx-backend-sdl-natives.jar").load("gdx-backend-sdl");
 		System.out.println(Integer.toHexString(Sdl.version()));
 		System.out.println(Sdl.init(Sdl.SDL_INIT_VIDEO));
 		System.out.println((Sdl.wasInit(Sdl.SDL_INIT_VIDEO) & Sdl.SDL_INIT_VIDEO) != 0);
@@ -21,6 +21,7 @@ public class SdlTest {
 		int flags = Sdl.SDL_OPENGL;
 		SdlSurface surface = Sdl.setVideoMode(640, 480, bpp, flags);
 		Sdl.glSwapBuffers();
+		Thread.sleep(2000);
 		Sdl.quit();
 	}
 }

@@ -109,7 +109,7 @@ public class Sdl {
 	*/
 	
 	public static native void glSwapBuffers(); /*
-		glClearColor(1, 0, 0, 1);
+		glClearColor(1, 1, 0, 1);
 		glClear(GL_COLOR_BUFFER_BIT);
 		SDL_GL_SwapBuffers();
 	*/

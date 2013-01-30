@@ -1,2 +1,5 @@
 bin/
 native/
+jni/target/
+target/
+libs/

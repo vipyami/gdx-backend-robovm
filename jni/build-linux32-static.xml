@@ -28,9 +28,7 @@
 	<property name="g++-opts" value="-c -Wall -O2 -mfpmath=sse -msse -fmessage-length=0 -m32 -fPIC"/>
 	<fileset id="g++-files" dir="./">
 		<exclude name="target/"/>
-				<include name="**/*.cpp"/>
-
-		
+		<include name="**/*.cpp"/>
 	</fileset>
 
 	<!-- define linker and options -->
