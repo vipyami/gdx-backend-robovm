@@ -19,7 +19,7 @@ public class SdlBuild {
 		BuildTarget lin64 = BuildTarget.newDefaultTarget(TargetOs.Linux, true);
 		lin64.libraries ="-L../../sdl/linux64 -lSDL";
 		new AntScriptGenerator().generate(new BuildConfig("gdx-backend-sdl"), lin32, lin64);
-		BuildExecutor.executeAnt("jni/build-linux64.xml", "-v");
+		BuildExecutor.executeAnt("jni/build-linux32.xml", "-v");
 		BuildExecutor.executeAnt("jni/build.xml", "pack-natives -v");
 	}
 }
